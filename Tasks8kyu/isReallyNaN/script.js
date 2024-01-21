@@ -6,7 +6,7 @@
 // and returns false otherwise.
 // Any solution is acceptable!
 
-// Example
+// Decision:
 
 function isReallyNaN(value) {
   return Number.isNaN(value);
