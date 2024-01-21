@@ -6,7 +6,7 @@
 // "paper", "paper" --> "Draw!"
 
 
-// Example
+// Decision:
 
 const rps = (p1, p2) => {
   if(p1===p2){
