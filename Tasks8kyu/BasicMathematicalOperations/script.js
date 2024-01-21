@@ -10,7 +10,7 @@
 // ('*', 5, 5) --> 25
 // ('/', 49, 7) --> 7
 
-// Decision: 
+// Notes
 
 
 function basicOp(operation, value1, value2) {
