@@ -14,3 +14,17 @@
 // '82yade 115te 103o'   --> 'Ready set go'
 
 // Decision:
+
+function decipherThis(str) {
+    return str.split(' ')
+              .map(word => {
+                  let match = word.match(/^(\d+)(.*)$/);
+                  let firstLetter = String.fromCharCode(match[1]);
+                  let remainingChars = match[2];
+                  return firstLetter + (remainingChars.length > 1 ? 
+                      remainingChars.slice(-1) + 
+                      remainingChars.slice(1, -1) + 
+                      remainingChars[0] : remainingChars);
+              })
+              .join(' ');
+}
