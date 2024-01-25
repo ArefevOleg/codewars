@@ -14,3 +14,10 @@
 // The parentheses can be nested.
 
 // Decision: 
+
+function removeParentheses(s) {
+    while (s.indexOf(')') !== -1) {
+      s = s.replace(/\([^\(\)]*\)/, '');
+    }
+    return s;
+}
