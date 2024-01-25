@@ -21,3 +21,12 @@
 
 
 // Decision:
+
+const bonus = function(arr, s) {
+    let total = arr.reduce(function(prev, current) {
+        return prev + (1 / current);
+    }, 0);
+    return arr.map(function(num) {
+        return Math.round(s * (1 / num) / total);
+    });
+};
