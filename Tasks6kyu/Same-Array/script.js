@@ -15,3 +15,21 @@
 
 
 // Decision: 
+
+function same(arrA, arrB){
+    if(arrA.length !== arrB.length)
+        return false;
+
+    let sortedA = arrA.map(a => a.sort((x, y) => x - y));
+    let sortedB = arrB.map(b => b.sort((x, y) => x - y));
+
+    sortedA.sort();
+    sortedB.sort();
+
+    for(let i = 0; i < arrA.length; i++){
+        if(sortedA[i][0] !== sortedB[i][0] || sortedA[i][1] !== sortedB[i][1])
+            return false;
+    }
+
+    return true;
+}
