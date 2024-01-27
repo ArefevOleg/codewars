@@ -1,14 +1,27 @@
 // Description
-// Write a function that takes an array of numbers (integers for the tests) and a target number. It should find two different items in the array that, when added together, give the target value. The indices of these items should then be returned in a tuple / list (depending on your language) like so: (index1, index2).
+// Given an array (arr) as an argument complete the function countSmileys that should return the total number of smiling faces.
 
-// For the purposes of this kata, some tests may have multiple answers; any valid solutions will be accepted.
+// Rules for a smiling face:
 
-// The input will always be valid (numbers will be an array of length 2 or greater, and all of the items will be numbers; target will always be the sum of two different items from that array).
+// Each smiley face must contain a valid pair of eyes. Eyes can be marked as : or ;
+// A smiley face can have a nose but it does not have to. Valid characters for a nose are - or ~
+// Every smiling face must have a smiling mouth that should be marked with either ) or D
+// No additional characters are allowed except for those mentioned.
 
-// Based on: https://leetcode.com/problems/two-sum/
+// Valid smiley face examples: :) :D ;-D :~)
+// Invalid smiley faces: ;( :> :} :]
 
-// twoSum([1, 2, 3], 4) // returns [0, 2] or [2, 0]
-// twoSum([3, 2, 4], 6) // returns [1, 2] or [2, 1]
+// Example
+// countSmileys([':)', ';(', ';}', ':-D']);       // should return 2;
+// countSmileys([';D', ':-(', ':-)', ';~)']);     // should return 3;
+// countSmileys([';]', ':[', ';*', ':$', ';-D']); // should return 1;
+// Note
+// In case of an empty array return 0. You will not be tested with invalid input (input will always be an array). Order of the face (eyes, nose, mouth) elements will always be the same.
+
 
 
 // Decision:
+
+function countSmileys(arr) {
+  return arr.filter(smiley => /[:;][-~]?[)D]/.test(smiley)).length;
+}
