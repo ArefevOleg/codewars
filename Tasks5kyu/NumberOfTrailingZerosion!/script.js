@@ -23,3 +23,10 @@
 
 
 // Decision: 
+function zeros(n) {
+  var result = 0;
+  for (var i = 5; n / i >= 1; i *= 5) {
+    result += Math.floor(n / i);
+  }
+  return result;
+}
