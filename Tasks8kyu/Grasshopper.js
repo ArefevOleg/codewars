@@ -7,3 +7,4 @@ function combat(health, damage) {
   const res = health - damage
   return res < 0 ? 0 : res
   }
+//return health < damage ? 0 : health - damage
