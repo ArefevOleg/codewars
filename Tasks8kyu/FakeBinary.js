@@ -6,4 +6,5 @@ const str = "32357895345677213"
 function fakeBin(x){
  const newStr = x.split("").map(Number => Number >= 5 ? Number = 1 : Number = 0)
   return newStr.join("")
+  // return x.split('').map(n => n < 5 ? 0 : 1).join('');
 }
