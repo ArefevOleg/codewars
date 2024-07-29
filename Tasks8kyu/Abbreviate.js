@@ -6,8 +6,9 @@
 // Sam Harris => S.H
 // patrick feeney => P.F
 
-function abbrevName(name){
-
-}
-
-console.log(abbrevName("Sam Harris"))
+// function abbrevName(name){
+//   const matches = name.match(/\b[A-Z]/g);
+//   return matches
+// }
+//
+// console.log(abbrevName("LKAWeNtVfdFGBeJvy fDFQSh7"))
