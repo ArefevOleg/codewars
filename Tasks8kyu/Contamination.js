@@ -15,6 +15,7 @@ function contamination(text, char) {
     b += char
   }
   return b
+  // return char.repeat(text.length)
 }
 
 console.log(contamination("abc", "z"))
