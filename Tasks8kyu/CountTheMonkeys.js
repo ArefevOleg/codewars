@@ -11,11 +11,10 @@
 function monkeyCount(n) {
   const arr = [];
   const length = n + 1;
-
   for (let i = 1; i < length; i++) {
     arr.push(i);
   }
-return arr
+  return arr
 }
 
 console.log(monkeyCount(20))
