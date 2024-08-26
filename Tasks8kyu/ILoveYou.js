@@ -15,17 +15,17 @@
 // Ваша цель в этом ката - определить, какую фразу девушки сказали бы на последнем
 // лепестке цветка с заданным количеством лепестков. Количество лепестков всегда больше 0.
 //
-function howMuchILoveYou(nbPetals) {
-const a = "I love you"
-  const b = "a little"
-  const c = "a lot"
-  const d = "passionately"
-  const e = "madly"
-  const f = "not at all"
-
-  for (let i = 0; i <nbPetals; i++) {
-    console.log()
-  }
-}
-
-console.log(howMuchILoveYou(7))
+// function howMuchILoveYou(nbPetals) {
+// const a = "I love you"
+//   const b = "a little"
+//   const c = "a lot"
+//   const d = "passionately"
+//   const e = "madly"
+//   const f = "not at all"
+//
+//   for (let i = 0; i <nbPetals; i++) {
+//     console.log()
+//   }
+// }
+//
+// console.log(howMuchILoveYou(7))
