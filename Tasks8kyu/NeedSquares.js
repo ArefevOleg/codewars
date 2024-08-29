@@ -11,20 +11,24 @@
 // новейшей спецификацией Javascript на момент написания статьи.
 // Вам не кажется, что параметр array немного многословен? ;)
 // Удачи! :D
-function squaresOnly(array) {
-  var result = [], isSquare;
-  for (let i = 0; i < array.length; i++) {
-    isSquare = !1; // !1 принимает значение false и, следовательно, является сокращенным способом ввода "false"
-    for (let k = 0; k <= 10; k++) {
-      if (k ** 2 === array[i]) {
-        isSquare = true;
-      }
-    }
-    if (isSquare) {
-      result[result.length] = array[i];
-    }
-  }
-  return result;
-}
+// function squaresOnly(array) {
+//   var result = [], isSquare;
+//   for (let i = 0; i < array.length; i++) {
+//     isSquare = !1; // !1 принимает значение false и, следовательно, является сокращенным способом ввода "false"
+//     for (let k = 0; k <= 10; k++) {
+//       if (k ** 2 === array[i]) {
+//         isSquare = true;
+//       }
+//     }
+//     if (isSquare) {
+//       result[result.length] = array[i];
+//     }
+//   }
+//   return result;
+// }
+//
+// console.log(squaresOnly([45,36,75,64,9,9,4,1,4,1,1,16,16,18,17,35,25,35]))
 
-console.log(squaresOnly([45,36,75,64,9,9,4,1,4,1,1,16,16,18,17,35,25,35]))
+
+
+
