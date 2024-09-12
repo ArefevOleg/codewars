@@ -7,7 +7,9 @@
 // "Hi There." --> "There. Hi"
 
 function reverse(string){
-
+  const arr = string.split(' ');
+  return arr.reverse().join(' ')
+  // return string.split(' ').reverse().join(' ');
 }
 
-console.log(reverse("Hello World"))
+console.log(reverse('I am an expert at this')) //[ 'Hello', 'World' ]
